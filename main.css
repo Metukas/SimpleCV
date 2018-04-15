@@ -1,0 +1,89 @@
+body{
+    background: #cacaca;
+    color: black;
+    display:block;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.page{
+    margin: 10px auto;
+    background: white;
+    padding-right: 10px;
+    padding-left: 30px;
+    background: linear-gradient(to right, rgb(228, 230, 210), white);
+    border-radius: 1%;
+    border: solid;
+    position: relative;
+    width: 794px;
+    height: 1123px;
+}
+
+.maincontent{
+    width: 100%;
+    padding-left: 10px;
+}
+
+
+#CV-title{
+    display:flex;
+    justify-content:center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    padding-right : 0px;
+}
+
+img{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 0px;
+    padding-bottom: 19px;
+    top: 0%;
+    height: 250px;
+    width: 170px;
+}
+
+#foto.large{
+    position: absolute;
+    margin-left: 35em;
+    margin-right: 0;
+    padding-right: 0;
+    padding-top: 19px;
+    
+}
+
+#foto.small{
+    position: relative;
+    text-align: center;   
+    padding-top: 0px;    
+    margin:auto; 
+}
+
+
+h2{
+    display: flex;
+    margin-top: 0;
+    font-size: 22px; 
+}
+
+h3
+{
+    font-size: 18px;
+}
+
+span.fadingBorder { 
+    display: block; 
+    height: 3px; 
+    background: linear-gradient(to right, black, white);
+  } 
+
+li{
+    display:table-row;
+}
+span{
+    display:table-cell;    
+    padding-left: 10px;
+}

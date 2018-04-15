@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Simple CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <div class="page"> 
+    <h1 id="CV-title">CV</h1>
+    <div class="CVpic">
+    <img src="./me.png" alt="That's me!" id="foto"> 
+    <div class="maincontent">
+        
+    <h2>Personal Information:</h2>
+    <ul>
+        <li>
+            <strong>Name:</strong> <span>John Doe</span>
+        </li>
+        <li>
+            <strong>E-mail:</strong>  <span><a href="mailto:example@example.com">example@example.com</a>
+        </li>
+        <li>
+            <strong>Contact Phone:</strong> <span>+37060000000</span>
+        </li>
+        <li>
+            <strong>Employment status:</strong> <span>Unemployed</span>
+        </li>
+        <li>
+            <strong>Links: </strong> <span><a href="">GitHub</a></span>
+        </li>
+    </ul>
+    <span class="fadingBorder"></span>    
+    <h2>About Me:</h2>
+    <p>
+        This is awesome description about me. I like programming.
+    </p>
+    <span class="fadingBorder"></span>        
+    <h2>Education:</h2>
+    <p>The very best CS university</p>
+    <span class="fadingBorder"></span>        
+    <h2>Experience:</h2>
+    <p>I worked for these companies:</p>
+    <ul>
+        <li>
+            The awesome company: <span>2012-2014</span> 
+        </li>
+        <li>
+            The little less awesome company:  <span>2015-2018</span> 
+        </li>
+    </ul>
+    <span class="fadingBorder"></span>        
+    <h2>Expectations for the job:</h2>
+    <ul>
+        <li>
+            <strong>Specialty:</strong> <span>IT</span>
+        </li>
+        <li>
+            <strong>Desired contract:</strong> <span>Full time</span>
+        </li>
+        <li>
+            <strong>Location:</strong> <span>My Home</span>
+        </li>
+    </ul>
+    <span class="fadingBorder"></span>        
+    <h2>Skills:</h2>
+    <h3>Languages:</h3>
+    <ul>
+        <li><strong>Native: </strong>Mother tongue</li>
+        <li>
+            <strong>English: </strong>
+            <ul>
+                <li>
+                    <strong>Speaking: </strong> <span>Excellent</span>
+                </li>
+                <li>
+                    <strong>Reading: </strong> <span>Excellent</span>
+                </li>
+                <li>
+                    <strong>Writing: </strong> <span>Excellent</span>
+                </li>
+                <li>
+                    <strong>Listening: </strong> <span>Excellent</span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Computer Skills: </h3>
+    <ul>
+        <li>
+            <strong>
+                Proficient in: 
+            </strong>
+             HTML, CSS, Javascript
+        </li>
+        <li>
+            <strong>
+                Can write "Hello world" in under 15 minutes in:
+            </strong>
+            Basic, C++, C#, F#, Fortran, Python, Bash, Powershell, Rust
+
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+<div class="page"> 
+        <h3>This is an extra page, in case you need it</h3>
+</div>
+</body>
+<script>
+    var maxwidth = 800;
+    var foto = document.getElementById("foto");
+    var cvTitle = document.getElementById("CV-title");
+    var defaultCVtitlePadding = cvTitle.style.paddingBottom;
+    var isSmall = window.innerWidth < maxwidth ? true : false;
+    
+    checkSize();
+
+    window.onresize = function(){
+        if(window.innerWidth < maxwidth)
+        {
+            isSmall = true;
+        }
+        else if(window.innerWidth >= maxwidth)
+        {                        
+            isSmall = false;
+        }  
+        checkSize();
+        
+    }
+
+    function checkSize()
+    {
+        if(isSmall)
+        {
+            foto.className = "small";
+            cvTitle.style.paddingBottom = 0;            
+        }
+        else
+        {
+            foto.className = "large";
+            cvTitle.style.paddingBottom = defaultCVtitlePadding;                        
+        }
+    }
+</script>
+</html>
